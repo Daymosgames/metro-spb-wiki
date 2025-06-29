@@ -8,17 +8,43 @@
 </head>
 <body>
     <div class="container">
-        <h1>🚇 Википедия метро Петербурга</h1>
-        
-        <div class="line-list">
-            <a href="line1.html" class="line-button" style="--line-color: #e61e37;">
-                Кировско-Выборгская линия
+        <header>
+            <h1><span>🚇</span> Википедия метро Петербурга</h1>
+            <p class="subtitle">Полная информация о линиях и станциях</p>
+        </header>
+
+        <div class="lines-grid">
+            <a href="line1.html" class="line-card" style="--line-color: var(--line-1)">
+                <div class="line-header">Кировско-Выборгская линия</div>
+                <div class="line-content">
+                    <p>Первая линия петербургского метро, открыта в 1955 году.</p>
+                    <div class="line-stats">
+                        <span>19 станций</span>
+                        <span>29.6 км</span>
+                    </div>
+                </div>
             </a>
-            <a href="#" class="line-button" style="--line-color: #0078bf;">
-                Московско-Петроградская линия
+
+            <a href="#" class="line-card" style="--line-color: var(--line-2)">
+                <div class="line-header">Московско-Петроградская линия</div>
+                <div class="line-content">
+                    <p>Вторая линия, открыта в 1961 году. Соединяет север и юг города.</p>
+                    <div class="line-stats">
+                        <span>18 станций</span>
+                        <span>30.1 км</span>
+                    </div>
+                </div>
             </a>
-            <a href="#" class="line-button" style="--line-color: #00aa4e;">
-                Невско-Василеостровская линия
+
+            <a href="#" class="line-card" style="--line-color: var(--line-3)">
+                <div class="line-header">Невско-Василеостровская линия</div>
+                <div class="line-content">
+                    <p>Третья линия, открыта в 1967 году. Связывает центр с Васильевским островом.</p>
+                    <div class="line-stats">
+                        <span>12 станций</span>
+                        <span>22.6 км</span>
+                    </div>
+                </div>
             </a>
         </div>
     </div>
