@@ -5,44 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Метро Петербурга | Википедия</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#121212">
 </head>
 <body>
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
     <div class="container">
         <header>
-            <h1><span>🚇</span> Википедия метро Петербурга</h1>
-            <p class="subtitle">Полная информация о линиях и станциях</p>
+            <img src="images/logos/metrobuildteam.png" alt="MetroBuildTeam Logo" class="main-logo">
+            <h1 class="main_title">Википедия метро Петербурга</h1>
+            <p class="subtitle">Все линии и станции петербургского метрополитена</p>
         </header>
 
         <div class="lines-grid">
+            <!-- Линия 1 -->
             <a href="line1.html" class="line-card" style="--line-color: var(--line-1)">
-                <div class="line-header">Кировско-Выборгская линия</div>
+                <img src="images/logos/line1.svg" alt="Кировско-Выборгская линия" class="line-logo-l1 line-logo">
+                <div class="line-header">Кировско-Выборгская</div>
+                <img src="images/stations/line1/1.jpg" class="line_photos">
                 <div class="line-content">
-                    <p>Первая линия петербургского метро, открыта в 1955 году.</p>
+                    <p>15 ноября 1955 г.</p>
                     <div class="line-stats">
-                        <span>19 станций</span>
-                        <span>29.6 км</span>
+                        <span><i class="icon-station"></i> 19 станций</span>
+                        <span><i class="icon-length"></i> 29.6 км</span>
                     </div>
                 </div>
             </a>
 
-            <a href="#" class="line-card" style="--line-color: var(--line-2)">
-                <div class="line-header">Московско-Петроградская линия</div>
+            <!-- Линия 2 -->
+            <a href="line2.html" class="line-card" style="--line-color: var(--line-2)">
+                <img src="images/logos/line2.svg" alt="Московско-Петроградская линия" class="line-logo-l2 line-logo">
+                <div class="line-header">Московско-Петроградская</div>
+                <img src="images/stations/line1/1.jpg" class="line_photos">
                 <div class="line-content">
-                    <p>Вторая линия, открыта в 1961 году. Соединяет север и юг города.</p>
+                    <p><i class="icon-calendar"></i> Открыта: 1961 г.</p>
                     <div class="line-stats">
-                        <span>18 станций</span>
-                        <span>30.1 км</span>
+                        <span><i class="icon-station"></i> 18 станций</span>
+                        <span><i class="icon-length"></i> 30.1 км</span>
                     </div>
                 </div>
             </a>
 
-            <a href="#" class="line-card" style="--line-color: var(--line-3)">
-                <div class="line-header">Невско-Василеостровская линия</div>
+            <!-- Линия 3 -->
+            <a href="line3.html" class="line-card" style="--line-color: var(--line-3)">
+                <img src="images/logos/line3.svg" alt="Невско-Василеостровская линия" class="line-logo-l3 line-logo">
+                <div class="line-header">Невско-Василеостровская</div>
+                <img src="images/stations/line1/1.jpg" class="line_photos">
                 <div class="line-content">
-                    <p>Третья линия, открыта в 1967 году. Связывает центр с Васильевским островом.</p>
+                    <p><i class="icon-calendar"></i> Открыта: 1967 г.</p>
                     <div class="line-stats">
-                        <span>12 станций</span>
-                        <span>22.6 км</span>
+                        <span><i class="icon-station"></i> 12 станций</span>
+                        <span><i class="icon-length"></i> 22.6 км</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Линия 4 -->
+            <a href="line4.html" class="line-card" style="--line-color: var(--line-4)">
+                <img src="images/logos/line4.svg" alt="Правобережная линия" class="line-logo-l4 line-logo">
+                <div class="line-header">Правобережная</div>
+                <img src="images/stations/line1/1.jpg" class="line_photos">
+                <div class="line-content">
+                    <p><i class="icon-calendar"></i> Открыта: 1985 г.</p>
+                    <div class="line-stats">
+                        <span><i class="icon-station"></i> 8 станций</span>
+                        <span><i class="icon-length"></i> 11.2 км</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Линия 5 -->
+            <a href="line5.html" class="line-card" style="--line-color: var(--line-5)">
+                <img src="images/logos/line5.svg" alt="Фрунзенско-Приморская линия" class="line-logo-l5 line-logo">
+                <div class="line-header">Фрунзенско-Приморская</div>
+                <img src="images/stations/line1/1.jpg" class="line_photos">
+                <div class="line-content">
+                    <p><i class="icon-calendar"></i> Открыта: 2008 г.</p>
+                    <div class="line-stats">
+                        <span><i class="icon-station"></i> 15 станций</span>
+                        <span><i class="icon-length"></i> 26.2 км</span>
                     </div>
                 </div>
             </a>
@@ -50,5 +95,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </body>
 </html>
